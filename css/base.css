@@ -1,0 +1,82 @@
+/*浮动布局*/
+.lt {
+    float: left;
+}
+
+.rt {
+    float: right;
+}
+.clr-fix {
+    zoom: 1;
+}
+.clr-fix:after {
+    content: "clear";
+    display: block;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+/*弹性盒子布局-兼容性*/
+.ub {
+    display: -webkit-flex;    /* 新版本语法: Chrome 21+ */
+    display: flex;                 /* 新版本语法: Opera 12.1, Firefox 22+ */
+    display: -webkit-box;   /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box;      /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox;   /* 混合版本语法: IE 10 */
+}
+
+.ub-f1 {
+    -webkit-flex: 1;           /* Chrome */
+    flex: 1;                       /* new, Spec - Opera 12.1, Firefox 20+ */
+    -ms-flex: 1;                /* IE 10 */
+    -webkit-box-flex: 1;   /* old - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;      /* old - Firefox 19- */
+}
+
+.ub-f2 {
+    -webkit-flex: 2;           /* Chrome */
+    flex: 2;                       /* new, Spec - Opera 12.1, Firefox 20+ */
+    -ms-flex: 2;                /* IE 10 */
+    -webkit-box-flex: 2;   /* old - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 2;      /* old - Firefox 19- */
+}
+/*元素在一行所占剩余空间平均分配*/
+.box-justify {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+/*mb-主背景色*/
+.mb-red {
+    background-color: #dd3137 !important;
+}
+
+.mb-gray {
+    background-color: #475b66 !important;
+}
+/*mc-主字体色*/
+.mc-red {
+    color: #dd3137 !important;
+}
+
+.mc-gray {
+    color: #475b66 !important;
+}
+
+.gray-9 {
+    color: #999 !important;
+}
+
+.gray-6 {
+    color: #666 !important;
+}
+
+.gray-3 {
+    color: #333 !important;
+}
+
